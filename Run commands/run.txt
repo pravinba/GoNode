@@ -1,0 +1,11 @@
+http://mean-pravinba.c9users.io:8081/?_c9_id=livepreview0&_c9_host=https://ide.c9.io
+http://mean-pravinba.c9users.io:8081
+
+mysql-ctl start
+mysql-ctl cli
+SHOW VARIABLES WHERE Variable_name = 'hostname';
++---------------+-----------------------+
+| Variable_name | Value                 |
++---------------+-----------------------+
+| hostname      | pravinba-mean-4714509 |
++---------------+-----------------------+

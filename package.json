@@ -4,6 +4,8 @@
   "description": "testing mean apps",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {},
