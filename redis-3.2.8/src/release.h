@@ -1,0 +1,3 @@
+#define REDIS_GIT_SHA1 "2495f16a"
+#define REDIS_GIT_DIRTY "315"
+#define REDIS_BUILD_ID "pravinba-mean-4714509-1492243840"

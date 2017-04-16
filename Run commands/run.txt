@@ -1,6 +1,8 @@
 http://mean-pravinba.c9users.io:8081/?_c9_id=livepreview0&_c9_host=https://ide.c9.io
 http://mean-pravinba.c9users.io:8081
 
+curl -v -H "Content-Type: application/json" -X POST -d '{"name":"pravinba", "age": "21"}' http://mean-pravinba.c9users.io:8081/users
+
 mysql-ctl start
 mysql-ctl cli
 SHOW VARIABLES WHERE Variable_name = 'hostname';
@@ -9,3 +11,18 @@ SHOW VARIABLES WHERE Variable_name = 'hostname';
 +---------------+-----------------------+
 | hostname      | pravinba-mean-4714509 |
 +---------------+-----------------------+
+
+
+Postgres
+========
+sudo service postgresql start
+
+Mongo
+=====
+mongoose.connect("mongodb://admin:admin@cluster0-shard-00-00-dvqwg.mongodb.net:27017,cluster0-shard-00-01-dvqwg.mongodb.net:27017,cluster0-shard-00-02-dvqwg.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin");
+
+Rest API calls
+==============
+curl -v -H "Content-Type: application/json" -X POST -d '{"text":"First note"}' http://mean-pravinba.c9users.io:8080/api/todos
+curl -X GET  http://mean-pravinba.c9users.io:8080/api/todos
+curl -v -H "Content-Type: application/json" -X DELETE http://mean-pravinba.c9users.io:8080/api/todos/58f18c287c54390d4ca7231d
