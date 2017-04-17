@@ -31,12 +31,15 @@ function initPassport () {
         console.log(`Username:${username}`)
         console.log(`Password:${password}`)
         if (err) {
+          console.log("initPassport error")
           return done(err)
         }
         if (!user) {
+          console.log("User is null")
           return done(null, false)
         }
         if (password !== user.password  ) {
+          console.log("Password not matched")
           return done(null, false)
         }
         console.log(`Authenticated.1.`)
